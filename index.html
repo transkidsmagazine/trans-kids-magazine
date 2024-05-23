@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trans Kids Magazine</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    </head>
+
+    <body>
+
+<!-- VIDEO ---------------------------------------------->
+        <section class="section--video">
+            <video class="video-background" autoplay muted loop> 
+                <source src="./video/gradient_dark5.mp4" type="video/mp4">
+                <img class="img--logo img--tkm-logo" src="./images/tkm-logo.png" alt="TKM"/>
+            </video>
+        </section>
+
+        
+<!-- MENU ---------------------------------------------->
+        <div class="menu">
+          <nav class="navegation">
+            <a href="#" id="logo">
+              <img class="menu--logo" src="images/tkm-logo.png">
+              <a>
+            <a href="#" class="cool-hover">+ info</a>
+            <a href="#" class="cool-hover">entrevistas</a>
+            <a href="#" class="cool-hover">contacto</a>
+          </nav>
+        </div>
+
+<!-- INTRO ---------------------------------------------->
+<section id="sectionOne">
+  <div id="welcome2">
+    <h5>∵* ⊹ ¸.•*✶´⭒_ hola! (๑•ᴗ•๑)</h5>
+    <h3 id="introText"></h3>
+    <div>
+      <button class='buttonIntro' id="join"></button>
+      <a class='buttonIntro' id="magazine" target="_blank">Download</a>
+    </div>
+  </div>
+
+  <!-- INTERVIEW SECTION ---------------------------------------------->
+  <section id="interview">
+    <h2 id="interviewName"></h2>
+    <div id="description">
+      <a href="" target="_blank" id="username"></a>
+      <p id="pronouns"></p>
+      <p id="bio"></p>
+      <p id="city"></p>
+    </div>
+    <div id="galleryImage"></div>
+    <div id="interviewContent">
+      <div id="origin"></div>
+      <div id="identity"></div>
+      <div id="challenges"></div>
+      <div id="family"></div>
+      <div id="icons"></div>
+    </div>
+  </section>
+  
+  <!-- GALLERY----------------------------------------------->
+  <div class='gallery'>
+    <div id='gallery-track'></div>
+  </div> 
+</section>
+
+<script src="javascript.js"></script>
+<script src="firebase.js" type="module"></script>
+    </body>
+</html>
