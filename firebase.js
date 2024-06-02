@@ -118,11 +118,12 @@ $("#gallery-track").on("click", ".card", function () {
         html = converter.makeHtml(text);
     target.innerHTML = html;
 
-    $('#interview').css('display', 'block');
+    $('#interview').css('display', 'flex');
     $('#welcome2').css('display', 'none');
+    window.scrollTo({ top: 0, behavior: 'smooth' })
 });
 
-$('#logo').on('click', () => {
-    $('#welcome2').css('display', 'block');
+$('#back, #logo').on('click', () => {
+    $('#welcome2').css('display', 'flex');
     $('#interview').css('display', 'none');
 });
